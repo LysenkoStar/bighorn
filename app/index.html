@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Properties</title>
+    <title>Team</title>
     <link rel="stylesheet" href="css/app.min.css">
 </head>
-<body>
+<body class="page page__team">
 
     <header>
         <div class="header__navigation">
@@ -80,9 +80,9 @@
             <div class="nav__block-left">BIGHORN PROPERTIES</div>
             <div class="nav__block-right">
                 <ul>
-                    <li class="active"><a href="/">home</a></li>
+                    <li><a href="/">home</a></li>
                     <li><a href="/">properties</a></li>
-                    <li><a href="/">team</a></li>
+                    <li class="active"><a href="/">team</a></li>
                     <li><a href="/">insights</a></li>
                     <li><a href="/">contact</a></li>
                 </ul>
@@ -94,333 +94,39 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="page__title text-center">Find Your Next Home</h2>
+                    <h2 class="page__title text-center">Meet the BIGHORN Properties Team</h2>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="properties">
+    <section class="about__team">
         <div class="container">
-            <div class="properties__title">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section__title text-center">Featured Properties</h3>
-                    </div>
+            <div class="row">
+<!--                <div class="col-md-12">-->
+<!--                    <div class="about__team-wrapper">-->
+<!--                        <div class="about__team-photo">-->
+<!--                            <img src="images/dist/about__team.jpg" alt="" class="about__team-img">-->
+<!--                        </div>-->
+<!--                        <div class="about__team-description">-->
+<!--                            <div class="about__team-text">-->
+<!--                                <p>A bespoke office, BIGHORN properties is the only team with the experience, insight, integrity, focus, commitment and connection to our community to deliver the world-class experience that bighorn members expect and deserve.</p>-->
+<!--                            </div>-->
+<!--                            <div class="about__team-link">-->
+<!--                                <a href="/" class="button__action">Our Team</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="col-md-5">
+                    <img src="images/dist/about__team.jpg" alt="" class="about__team-img w-100">
                 </div>
-            </div>
-            <div class="properties__search">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 order-xl-first order-lg-last order-md-last order-sm-last order-last">
-                        <ul class="properties__search-options">
-                            <li class="option active"><a href="/">all</a></li>
-                            <li class="option"><a href="/">new specs</a></li>
-                            <li class="option"><a href="/">resales</a></li>
-                            <li class="option"><a href="/">villas</a></li>
-                            <li class="option"><a href="/">homesites</a></li>
-                            <li class="option"><a href="/">penthouses</a></li>
-                        </ul>
+                <div class="col-md-7">
+                    <div class="about__team-text">
+                        <p>A bespoke office, BIGHORN properties is the only team with the experience, insight, integrity, focus, commitment and connection to our community to deliver the world-class experience that bighorn members expect and deserve.</p>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 order-xl-last order-lg-first order-md-first order-sm-first order-first">
-                        <form action="/" method="post" class="properties__search-box">
-                            <input type="text" name="search" class="search__input" placeholder="Search by Addres">
-                            <button type="submit" class="search__button"><span>submit</span></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="properties__options">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="properties__options-left">
-                            <div class="properties__options-group">
-                                <span class="options__title">Bedrooms</span>
-                                <ul class="options__choice">
-                                    <li class="option">
-                                        <input type="radio" name="bedroom" id="bedroom-2">
-                                        <label for="bedroom-2">2+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="bedroom" id="bedroom-3">
-                                        <label for="bedroom-3">3+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="bedroom" id="bedroom-4">
-                                        <label for="bedroom-4">4+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="bedroom" id="bedroom-5">
-                                        <label for="bedroom-5">5+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="bedroom" id="bedroom-6">
-                                        <label for="bedroom-6">6+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="bedroom" id="bedroom-7">
-                                        <label for="bedroom-7">7+</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="properties__options-group">
-                                <span class="options__title">Baths</span>
-                                <ul class="options__choice">
-                                    <li class="option">
-                                        <input type="radio" name="bath" id="bath-2">
-                                        <label for="bath-2">2+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="bath" id="bath-3">
-                                        <label for="bath-3">3+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="bath" id="bath-4">
-                                        <label for="bath-4">4+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="bath" id="bath-5">
-                                        <label for="bath-5">5+</label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="properties__options-right">
-                            <div class="properties__options-group">
-                                <span class="options__title">SQFT</span>
-                                <ul class="options__choice">
-                                    <li class="option">
-                                        <input type="radio" name="sqft" id="sqft-2">
-                                        <label for="sqft-2">2500+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="sqft" id="sqft-4">
-                                        <label for="sqft-4">4000+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="sqft" id="sqft-5">
-                                        <label for="sqft-5">5000+</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="sqft" id="sqft-10">
-                                        <label for="sqft-10">10000+</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="properties__options-group">
-                                <span class="options__title">Location</span>
-                                <ul class="options__choice">
-                                    <li class="option">
-                                        <input type="radio" name="location" id="location-1">
-                                        <label for="location-1">CANYONS</label>
-                                    </li>
-                                    <li class="option">
-                                        <input type="radio" name="location" id="location-2">
-                                        <label for="location-2">MOUNTAINS</label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="properies__actions text-right">
-                <a href="/" class="action__item">CLEAR SELECTIONS</a>
-            </div>
-        </div>
-        <div class="properies__cards">
-            <div class="row w-100 m-0">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_1.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_2.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_3.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_1.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_2.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_3.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_1.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_2.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_3.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_1.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_2.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="properies__card-item">
-                        <div class="properies__item-photo">
-                            <img src="images/dist/property_3.jpg" alt="" class="properies__item-img">
-                        </div>
-                        <div class="properies__item-text">
-                            <div class="properies__item-title">
-                                <span>Penthouse 301</span>
-                            </div>
-                            <div class="properies__item-info">
-                                <span class="item__title">Location</span>
-                                <span class="item__address">Mountains • 6,009 SF</span>
-                            </div>
-                        </div>
+                    <div class="about__team-link">
+                        <a href="/" class="button__action">Our Team</a>
                     </div>
                 </div>
             </div>
@@ -429,11 +135,6 @@
 
     <section class="team">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section__title text-center">Meet the BIGHORN Sales Team</h3>
-                </div>
-            </div>
             <div class="team__container">
                 <div class="row">
                     <div class="col-md-12 col-lg-6 col-xl-6">
@@ -597,102 +298,6 @@
         </div>
     </section>
 
-    <section class="insights">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section__title text-center">Insights</h3>
-                </div>
-            </div>
-            <div class="insights__container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4 col-xl-4 mb-md-2 mb-sm-2 mb-4">
-                        <div class="insights_item">
-                            <img src="images/dist/insight_1.jpg" alt="" class="insights__img">
-                            <div class="insights__date">OCTOBER 11, 2018</div>
-                            <div class="insights__title">A bespoke office</div>
-                            <div class="insights__text">BIGHORN properties is the only team with the experience, insights, integrity, focus, commitment and connection to our community to deliver the world class experience…</div>
-                            <div class="insights__link"><a href="">Continue reading</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-4 col-xl-4 mb-md-2 mb-sm-2 mb-4">
-                        <div class="insights_item">
-                            <img src="images/dist/insight_2.jpg" alt="" class="insights__img">
-                            <div class="insights__date">OCTOBER 11, 2018</div>
-                            <div class="insights__title">A bespoke office</div>
-                            <div class="insights__text">BIGHORN properties is the only team with the experience, insights, integrity, focus, commitment and connection to our community to deliver the world class experience…</div>
-                            <div class="insights__link"><a href="">Continue reading</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-4 col-xl-4 mb-md-2 mb-sm-2 mb-4">
-                        <div class="insights_item">
-                            <img src="images/dist/insight_3.jpg" alt="" class="insights__img">
-                            <div class="insights__date">OCTOBER 11, 2018</div>
-                            <div class="insights__title">A bespoke office</div>
-                            <div class="insights__text">BIGHORN properties is the only team with the experience, insights, integrity, focus, commitment and connection to our community to deliver the world class experience…</div>
-                            <div class="insights__link"><a href="">Continue reading</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="insights__action">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a href="/" class="button__action">Read More Blog</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section__title text-center">Client Testimonials</h3>
-                </div>
-            </div>
-            <div class="testimonials__container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4 col-xl-4 mb-md-2 mb-sm-2 mb-4">
-                        <div class="testimonials__item">
-                            <img src="images/dist/quotes.svg" alt="quotes" class="testimonials_ico">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, earum vero? Ab ad assumenda autem dignissimos dolores est facere impedit in molestiae praesentium ratione sequi similique suscipit vero, voluptatibus! Distinctio!</p>
-                            <div class="testimonials__item-footer">
-                                <span class="testimonials__person">Jim Lonesten</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-4 col-xl-4 mb-md-2 mb-sm-2 mb-4">
-                        <div class="testimonials__item">
-                            <img src="images/dist/quotes.svg" alt="quotes" class="testimonials_ico">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam dolorem illum magni maxime modi quos reiciendis rerum voluptas voluptatum! Ad id inventore itaque maxime odit pariatur quaerat sapiente, velit?</p>
-                            <div class="testimonials__item-footer">
-                                <span class="testimonials__person">Jim Lonesten</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-4 col-xl-4 mb-md-2 mb-sm-2 mb-4">
-                        <div class="testimonials__item">
-                            <img src="images/dist/quotes.svg" alt="quotes" class="testimonials_ico">
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur eaque eum modi qui. Amet consectetur facilis necessitatibus nulla temporibus.</p>
-                            <div class="testimonials__item-footer">
-                                <span class="testimonials__person">Jim Lonesten</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials__action">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a href="/" class="button__action">Read More Testimonials</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="contact-us">
         <div class="container">
             <div class="row">
@@ -778,6 +383,7 @@
         </div>
     </footer>
 
-    <script src="js/app.min.js"></script>
+<script src="js/app.min.js"></script>
+
 </body>
 </html>

@@ -22,10 +22,10 @@ section
 
     .section__decorate-border-left
       width: 100%
-      margin-right: -33px
+      margin-right: -35px
 
     .section__decorate-border-right
-      margin-left: -33px
+      margin-left: -35px
 
     .section__decorate-container
       position: relative
@@ -38,13 +38,25 @@ section
         height: 18px
         border: 1px solid #fff
         transform: rotate(45deg)
+        &:nth-child(1)
+          position: relative
+          left: 4px
+        &:nth-child(2)
+          width: 15px
+          height: 15px
+          left: 0
+          top: -1.5px
+          position: relative
+        &:nth-child(3)
+          position: relative
+          left: -4px
         .section__decorate-box
           position: absolute
           transform: rotate(90deg)
-          width: 33px
-          height: 33px
-          top: -9px
-          left: -9px
+          width: 29px
+          height: 29px
+          top: -8px
+          left: -8px
 
   &.contact-us
     background-color: #262C2E
@@ -214,7 +226,7 @@ section
               color: $dark-text-color
 
   &.page__description
-    background-color: #F2F2F2
+    background-color: transparent
     p
       @include stack-questa
       font-size: 1.4em
