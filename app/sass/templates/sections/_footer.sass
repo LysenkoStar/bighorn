@@ -1,0 +1,209 @@
+footer
+  position: relative
+  background-color: #1F2628
+  min-height: 260px
+  color: #ffffff
+  .footer__decorate
+    position: relative
+    height: 0
+    z-index: 1
+    .decorate__box
+      border: 4px solid #fff
+      opacity: 0.16
+      transform: rotate(45deg)
+      position: absolute
+      mix-blend-mode: normal
+      z-index: 100
+      &:nth-child(1)
+        width: 150px
+        height: 150px
+        right: 0
+        bottom: -75px
+      &:nth-child(2)
+        width: 150px
+        height: 150px
+        right: 175px
+        bottom: -75px
+        .decorate__box
+          width: 280px
+          height: 280px
+          transform: rotate(90deg)
+          opacity: 1
+          top: -72px
+          left: -69px
+
+      &:nth-child(3)
+        width: 150px
+        height: 150px
+        right: 349px
+        bottom: -75px
+
+  .footer__wrapper
+    padding: 62px 0
+    ul.footer__social
+      list-style-type: none
+      margin: 0
+      padding: 0
+      li
+        display: inline-block
+        font-size: 1.9rem
+        letter-spacing: 1.3rem
+        a
+          color: rgba(255,255,255, 0.4)
+          transition: all 0.25s linear
+          &:hover
+            color: $main-text-color
+
+  .footer__logo-text
+    @include stack-questa
+    font-weight: bold
+    font-size: 2rem
+    text-transform: uppercase
+    padding-bottom: 50px
+
+  .footer__contact-info
+    max-width: 250px
+    @include gotham-medium
+    font-size: 1rem
+    text-align: left
+    margin: 0 auto
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      display: block
+      width: 1px
+      height: 100%
+      background-color: rgba(212, 185, 149, 0.1)
+
+    span
+      color: rgba(255,255,255, 0.4)
+      padding-right: 8px
+
+  .footer__navigation
+    text-align: right
+    ul
+      list-style-type: none
+      margin: 0
+      padding: 0
+      li
+        display: block
+        a
+          @include gotham-medium
+          font-size: 1.2rem
+          color: #ffffff
+          line-height: 2.8rem
+          transition: all 0.25s linear
+          &:hover
+            color: $main-text-color
+            text-decoration: none
+
+
+//Responsive
+@media (max-width: 1200px)
+  footer
+    .footer__decorate
+      .decorate__box
+        &:nth-child(1)
+          right: 50px
+        &:nth-child(2)
+          right: 225px
+        &:nth-child(3)
+          right: 399px
+
+@media (max-width: 992px)
+  footer
+    .footer__logo-text
+      text-align: center
+      padding-bottom: 0
+    .footer__social
+      display: flex
+      align-items: stretch
+      justify-content: space-between
+    .footer__contact-info
+      max-width: 100%
+      margin: 1em 0
+      text-align: center
+      &:before
+        display: none
+      &:after
+        content: ""
+        position: relative
+        bottom: 0
+        display: block
+        width: 100%
+        height: 2px
+        background-color: rgba(212, 185, 149, 0.1)
+    .footer__navigation
+      text-align: center
+      .footer__navigation-list
+        display: flex
+        align-items: stretch
+        justify-content: space-between
+
+@media (max-width: 768px)
+  footer
+    .footer__decorate
+      .decorate__box
+        &:nth-child(1)
+          width: 100px
+          height: 100px
+          bottom: -50px
+          right: -145px
+        &:nth-child(2)
+          width: 100px
+          height: 100px
+          bottom: -50px
+          right: -50px
+          .decorate__box
+            width: 170px
+            height: 170px
+            top: -40px
+            left: -40px
+        &:nth-child(3)
+          width: 100px
+          height: 100px
+          bottom: -50px
+          right: 45px
+      .footer__decorate-wrapper
+        position: absolute
+        right: 50%
+        transform: translate(0%,0)
+        width: 100%
+
+    .footer__navigation
+      ul
+        li
+          a
+            font-size: 1rem
+
+@media (max-width: 425px)
+  footer
+    .footer__navigation
+      .footer__navigation-list
+        display: block
+
+@media (max-width: 375px)
+  footer
+    .footer__decorate
+      .decorate__box
+        &:nth-child(1)
+          width: 80px
+          height: 80px
+          bottom: -40px
+          right: -130px
+        &:nth-child(2)
+          width: 80px
+          height: 80px
+          bottom: -40px
+          right: -50px
+          .decorate__box
+            width: 140px
+            height: 140px
+            top: -34px
+            left: -34px
+        &:nth-child(3)
+          width: 80px
+          height: 80px
+          bottom: -40px
+          right: 30px

@@ -1,0 +1,286 @@
+header
+  background-image: url(../images/dist/main.jpg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
+  height: 100vh
+
+  &:after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,.2)
+    z-index: 5
+
+  .header__navigation
+    position: relative
+    @include gotham-book
+    font-size: 0.9rem
+    font-weight: bold
+    letter-spacing: 1px
+    padding: 3rem 6rem
+    display: flex
+    justify-content: space-between
+    z-index: 999
+    .header__navigation-left
+      .header__navigation-button
+        display: inline-block
+        float: left
+        width: 45px
+        height: 45px
+        background: transparent
+        border: 2px solid $light-text-color
+        outline: none
+        transition: all 0.25s linear
+        span
+          transition: all 0.2s linear
+          &:nth-child(1)
+            display: block
+            background-color: #EEE6DC
+            height: 2px
+            width: 28px
+            margin-bottom: 8px
+          &:nth-child(2)
+            display: block
+            background-color: #EEE6DC
+            height: 2px
+            width: 28px
+          &:nth-child(3)
+            display: block
+            background-color: #EEE6DC
+            height: 2px
+            width: 28px
+            margin-top: 8px
+        &:hover
+          border-color: $main-text-color
+          span
+            background-color: $main-text-color
+
+      .header__logo-text
+        display: inline-block
+        margin-left: 20px
+        color: #FFFFFF
+        padding: 12px 20px
+
+    .header__navigation-right
+      .header__navigation-login
+        display: block
+        padding: 12px
+        color: #ffffff
+        text-transform: uppercase
+        transition: color 0.2s linear
+        &:hover
+          text-decoration: none
+          color: $main-text-color
+  .header__text
+    position: absolute
+    width: 100%
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    color: #ffffff
+    z-index: 999
+    h2
+      font-size: 12rem
+      @include stack-questa
+      line-height: 10rem
+    span
+      font-size: 2.9rem
+      letter-spacing: 2.714rem
+      text-transform: uppercase
+      @include gotham-light
+  .menu__main
+    background-color: #fff
+    z-index: 999
+    position: fixed
+    top: 0
+    left: -100%
+    height: 100%
+    transition: all 0.4s ease-out
+    .menu__main-wrapper
+      position: relative
+      padding: 5em
+    .menu__main-logo
+      text-align: center
+      margin-bottom: 2em
+      .menu__logo
+        text-transform: uppercase
+        color: $main-text-color
+        @include stack-questa
+        font-weight: bold
+        font-size: 3.4em
+        opacity: 0.75
+    .menu__main-list
+      padding: 0 2.6em
+      .menu__list
+        list-style-type: none
+        .menu__item
+          a
+            text-transform: uppercase
+            color: $dark-text-color
+            @include gotham-light
+            line-height: 2.3em
+            font-size: 1em
+    .menu__main-button
+      position: absolute
+      left: 2em
+      top: 2em
+      display: inline-block
+      width: 45px
+      height: 45px
+      background: 0 0
+      border: 2px solid $light-text-color
+      outline: 0
+      transition: all .25s linear
+      span
+        display: block
+        background-color: #eee6dc
+        height: 2px
+        transition: all .25s linear
+        &:nth-child(1)
+          transform: rotate(45deg)
+        &:nth-child(2)
+          transform: rotate(-45deg)
+          margin-top: -2px
+      &:hover
+        span
+          background-color: $light-text-color
+
+
+nav
+  padding: 30px 60px
+  @include gotham-book
+  font-weight: 700
+  font-size: 1.1rem
+  letter-spacing: 1px
+  color: $dark-text-color
+  background-color: #ffffff
+
+  .nav__wrapper
+    display: flex
+    justify-content: space-between
+
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    -webkit-box-orient: horizontal
+    -webkit-box-direction: normal
+    flex-direction: row
+    li
+      text-transform: uppercase
+      padding: 0 21px
+      color: rgba(13, 46, 55, 0.3)
+      a
+        color: inherit
+        transition: all 0.15s ease-in-out
+      &:hover
+        a
+         color: $dark-text-color
+         text-decoration: none
+        &:after
+          content: ""
+          display: block
+          width: 100%
+          height: 1px
+          background-color: $dark-text-color
+
+      &.active
+        color: $dark-text-color
+        &:after
+          content: ""
+          display: block
+          width: 100%
+          height: 1px
+          background-color: $dark-text-color
+
+//Responsive
+@media (max-width: 1024px)
+  header
+    .header__text
+      h2
+        font-size: 9rem
+        line-height: 6rem
+      span
+        letter-spacing: 1.9rem
+        font-size: 2.4rem
+  nav
+    font-size: 0.85rem
+    padding: 30px 40px
+    ul
+      li
+        padding: 0 15px
+
+@media (max-width: 768px)
+  header
+    .header__navigation
+      padding: 3rem
+      font-size: .85rem
+    .header__text
+      h2
+        font-size: 6rem
+        line-height: 4rem
+      span
+        letter-spacing: 1rem
+        font-size: 2rem
+  nav
+    .nav__wrapper
+      display: block
+      justify-content: unset
+      text-align: center
+      .nav__block-left
+        margin-bottom: 1em
+    ul
+      align-items: center
+      justify-content: space-between
+
+@media (max-width: 565px)
+  header
+    .header__navigation
+      padding: 2rem
+      .header__navigation-left
+        .header__logo-text
+          display: none
+    .header__text
+      h2
+        font-size: 5rem
+        line-height: 3rem
+      span
+        letter-spacing: 0.7rem
+        font-size: 1.8rem
+    .menu__main
+       width: 100%
+
+  nav
+    ul
+      display: block
+      li
+        padding: 10px 0
+        &.active
+          background-color: $dark-text-color
+          color: #ffffff
+          &:after
+            display: none
+        &:hover
+          background-color: $dark-text-color
+          color: #ffffff
+          a
+            color: inherit
+          &:after
+            display: none
+
+@media (max-width: 425px)
+  header
+    .header__text
+      h2
+        font-size: 4rem
+        line-height: 2rem
+      span
+        letter-spacing: .5rem
+        font-size: 1.5rem

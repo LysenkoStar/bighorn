@@ -1,0 +1,327 @@
+section
+  padding: 50px 0
+
+  .section__title
+    font-size: 2.7em
+    color: inherit
+    @include stack-questa
+
+  .section__decorate
+    width: 100%
+    text-align: center
+    position: relative
+    opacity: 0.16
+    display: flex
+
+    .section__decorate-border-left,
+    .section__decorate-border-right
+      width: 100%
+      border-bottom: 1px solid #fff
+      bottom: 15px
+      position: relative
+
+    .section__decorate-border-left
+      width: 100%
+      margin-right: -33px
+
+    .section__decorate-border-right
+      margin-left: -33px
+
+    .section__decorate-container
+      position: relative
+      min-width: 90px
+
+      .section__decorate-box
+        display: inline-block
+        margin: 0 auto
+        width: 18px
+        height: 18px
+        border: 1px solid #fff
+        transform: rotate(45deg)
+        .section__decorate-box
+          position: absolute
+          transform: rotate(90deg)
+          width: 33px
+          height: 33px
+          top: -9px
+          left: -9px
+
+  &.contact-us
+    background-color: #262C2E
+    .contact-us__text
+      @include stack-questa
+      color: #fff
+      padding: 2em 5em 1em 0
+      font-size: 2.3em
+      p
+        margin-bottom: 0
+
+  &.properties
+    .properties__search
+      margin: 40px 0
+      .properties__search-options
+        list-style-type: none
+        margin: 6px 0
+        padding: 0
+        text-align: center
+        .option
+          display: inline-block
+          padding: 0 10px
+          a
+            @include gotham-book
+            font-size: 0.95em
+            line-height: 2em
+            color: $main-text-color
+            text-transform: uppercase
+            &:hover
+              text-decoration: none
+              &:after
+                content: ""
+                display: block
+                width: 100%
+                height: 1px
+                background-color: $light-text-color
+                margin-top: -6px
+          &.active
+            a
+              font-weight: bold
+              &:after
+                content: ""
+                display: block
+                width: 100%
+                height: 2px
+                background-color: $light-text-color
+                margin-top: -6px
+      .properties__search-box
+        .search__input
+          border: none
+          outline: none
+          padding: 0.8em 1.6em
+          @include gotham-book
+          font-size: .87em
+          color: $light-text-color
+          width: 65%
+          background-color: #ffffff
+          margin-right: 5px
+          box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.04)
+        .search__button
+          display: inline-block
+          color: #ffffff
+          @include gotham-medium
+          border: none
+          background-color: $light-text-color
+          text-transform: uppercase
+          padding: .57em 1.56em
+          vertical-align: bottom
+    .properties__options
+      background-color: #ffffff
+      padding: 15px 20px
+      .properties__options-left,
+      .properties__options-right
+        display: table
+        border-collapse: collapse
+      .properties__options-group
+        display: table-row
+        &:nth-child(2n)
+          border-top: 0.5px solid rgba(13, 46, 55, 0.2)
+        &:before
+          content: ""
+          display: block
+          padding-top: 28px
+        .options__title
+          display: table-cell
+          @include gotham-medium
+          font-size: 1em
+          color: $dark-text-color
+        .options__choice
+          list-style-type: none
+          margin: 0
+          display: inline-block
+          text-align: center
+          .option
+            display: inline-block
+            padding: 0 10px
+            margin-bottom: 6px
+            input
+              &[type=radio]
+                box-sizing: border-box
+                appearance: none
+                background: white
+                outline: none
+                border: 0.5px solid $main-text-color
+                border-radius: 2px
+                width: 16px
+                height: 16px
+              &:checked
+                &:after
+                  content: ''
+                  display: block
+                  width: 10px
+                  height: 10px
+                  margin: 2px
+                  background-color: $main-text-color
+            label
+              color: $main-text-color
+              @include gotham-book
+              font-size: 0.9em
+              vertical-align: middle
+              margin-bottom: 5px
+    .properies__actions
+      margin-top: 5px
+      .action__item
+        text-transform: uppercase
+        @include gotham-medium
+        color: $dark-text-color
+        font-size: 0.7em
+        display: inline-block
+        transition: all 0.1s linear
+        &:after
+          content: ""
+          display: block
+          width: 100%
+          height: 1px
+          background-color: #0d2e37
+        &:hover
+          text-decoration: none
+          color: $main-text-color
+          &:after
+            background-color: $main-text-color
+    .properies__cards
+      margin: 3em 0
+      .properies__card-item
+        background-color: #ffffff
+        text-align: center
+        box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.04)
+        margin-bottom: 2em
+        .properies__item-photo
+          .properies__item-img
+            width: 100%
+        .properies__item-text
+          padding: 1.4em
+          .properies__item-title
+            margin-bottom: 5px
+            @include gotham-medium
+            font-size: 1.3em
+            color: $dark-text-color
+          .properies__item-info
+            @include gotham-book
+            font-size: 1em
+            .item__title
+              color: $light-text-color
+              opacity: 0.6
+              padding-right: 5px
+            .item__address
+              color: $dark-text-color
+
+  &.page__description
+    background-color: #F2F2F2
+    p
+      @include stack-questa
+      font-size: 1.4em
+      color: $dark-text-color
+      line-height: 1.4em
+      margin: 0
+      text-align: justify
+      padding: 0.5em
+    .page__title
+      @include stack-questa
+      text-transform: capitalize
+      font-size: 2.4em
+
+
+@media (max-width: 1200px)
+  section
+    &.properties
+      .properties__search
+        margin: 20px 0
+        .properties__search-options
+          margin: 2em 0 0 0
+        .properties__search-box
+          text-align: center
+          .search__button
+            padding: .57em 2.6em
+      .properties__options
+        .properties__options-group
+          .options__title
+            vertical-align: top
+            padding-top: 10px
+          .options__choice
+            text-align: left
+            .option
+              padding: 0 5px
+
+
+
+@media (max-width: 1024px)
+  section
+    &.contact-us
+      .contact-us__text
+        padding: 2em 0 1em 0
+
+@media (max-width: 992px)
+  section
+    &.contact-us
+      .contact-us__text
+        font-size: 2.5em
+    &.page__description
+      p
+        text-align: center
+        padding: 0
+
+@media (max-width: 768px)
+  section
+    .section__title
+      font-size: 2.4em
+    &.contact-us
+      .contact-us__text
+        font-size: 1.8em
+        padding: 1em 0
+      .button__action
+        position: relative
+        display: block
+        max-width: 200px
+        text-align: center
+        margin: 0 auto
+        z-index: 9
+    &.properties
+      .properties__options
+        .properties__options-left,
+        .properties__options-right
+          display: block
+          width: 100%
+        .properties__options-right
+          border-top: .5px solid rgba(13,46,55,.2)
+        .properties__options-group
+          display: block
+          &:before
+            display: none
+          .options__title
+            padding: 10px 0
+          .options__choice
+            padding: 0
+
+@media (max-width: 565px)
+  section
+    &.contact-us
+      .contact-us__text
+        font-size: 1.6em
+        text-align: center
+    &.properties
+      .properties__search
+        .properties__search-box
+          .search__input
+            width: 80%
+            margin: 0
+          .search__button
+            padding: .5em 1em
+            span
+              display: none
+            &:after
+              content: "\f002"
+              text-align: center
+              font-family: 'FontAwesome',sans-serif
+
+@media (max-width: 375px)
+  section
+    .section__title
+      font-size: 2em

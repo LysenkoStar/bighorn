@@ -1,0 +1,174 @@
+body
+  height: 100%
+  margin: 0
+  background-color: $page-color
+  overflow-x: hidden
+
+section
+  &.testimonials
+    background-color: #262C2E
+    @include stack-questa
+    color: #ffffff
+    .testimonials__container
+      padding: 55px 0
+      .testimonials__item
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-content: stretch
+        position: relative
+        height: 100%
+        padding: 25px
+        font-size: 1.1em
+        line-height: 1.4em
+        color: $dark-text-color
+        background-color: #EDEEEC
+        box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.04)
+        .testimonials_ico
+          display: block
+          margin: 0 auto
+          padding-bottom: 12px
+        .testimonials__item-footer
+          margin-top: 20px
+          &:before
+            content: ""
+            display: block
+            padding-top: 15px
+            mix-blend-mode: normal
+            opacity: 0.08
+            border-top: 1px solid $dark-text-color
+          .testimonials__person
+            opacity: 0.2
+            font-size: 1.2em
+            @include gotham-medium
+  &.insights
+    .insights__container
+      padding: 55px 0
+      .insights_item
+        .insights__img
+          width: 100%
+        .insights__date
+          display: block
+          color: $main-text-color
+          @include gotham-book
+          font-size: 1em
+          margin: 15px 0 5px
+        .insights__title
+          @include stack-questa
+          color: $dark-text-color
+          font-size: 2.2em
+          margin-bottom: 0.3em
+        .insights__text
+          color: $dark-text-color
+          opacity: 0.7
+          mix-blend-mode: normal
+          @include gotham-book
+          font-size: 1.1em
+          line-height: 1.3em
+          margin-bottom: 1em
+        .insights__link
+          a
+            position: relative
+            color: #D4B995
+            @include gotham-medium
+            font-size: 1.1em
+            transition: all 0.15s linear
+            &:after
+              content: "\f105"
+              font-size: 1.3em
+              vertical-align: middle
+              padding-left: 10px
+              font-family: 'FontAwesome',sans-serif
+              border-bottom: none
+              outline: none
+            &:hover
+              text-decoration: none
+              color: $main-text-color
+  &.team
+    background-color: #ffffff
+    .team__container
+      padding: 55px 0
+      .team__item
+        background-color: #ffffff
+        padding: 1.5em
+        display: flex
+        align-items: center
+        transition: all 0.1s ease-out
+        margin-bottom: 2.4em
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06)
+        .team__item-photo
+          width: 125px
+          min-width: 125px
+          .team__item-img
+            width: 100%
+            display: block
+            border-radius: 50%
+        .team__item-description
+          position: relative
+          padding-left: 2em
+          .team__item-position
+            color: $main-text-color
+            @include gotham-book
+            font-size: 0.9em
+            margin-bottom: 0.2em
+          .team__item-name
+            @include gotham-medium
+            color: $dark-text-color
+            font-size: 1.3em
+            margin-bottom: 0.3em
+          .team__item-text
+            @include gotham-book
+            font-size: 1em
+            line-height: 1.6em
+            color: $dark-text-color
+            opacity: 0.7
+            margin-bottom: 0.3em
+          .team__item-link
+            display: inline-block
+            a
+              @include gotham-medium
+              font-size: 1em
+              color: $light-text-color
+              &:after
+                content: ""
+                display: block
+                width: 100%
+                height: 1px
+                background-color: $light-text-color
+                margin-top: -2px
+              &:hover
+                text-decoration: none
+                &:after
+                  background-color: #ffffff
+          .team__item-social
+            position: absolute
+            top: 0
+            right: 0
+            a
+              display: block
+              width: 27px
+              height: 27px
+              background-color: $light-text-color
+              text-align: center
+              color: #ffffff
+              border-radius: 50%
+              transition: all 0.15s linear
+              i
+                vertical-align: middle
+              &:hover
+                background-color: darken($light-text-color, 15%)
+
+        &:hover
+          box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.04)
+
+@media (max-width: 565px)
+  section
+    &.team
+      .team__container
+        .team__item
+          display: block
+          .team__item-photo
+            margin: 0 auto
+          .team__item-description
+            padding: 0
+            text-align: center
