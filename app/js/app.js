@@ -14,6 +14,6 @@ function menuToggle(menu, open, close) {
         $(menu).css('left', 0)
     })
     $(close).click(function () {
-        $(menu).css('left', '-100%')
+        $(menu).css('left', '-120%')
     })
 }

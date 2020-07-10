@@ -48,7 +48,11 @@ section
   &.insights
     .insights__container
       padding: 55px 0
+      &>div>div:nth-last-child(-n+3)
+        .insights_item
+          margin-bottom: 0
       .insights_item
+        margin-bottom: 2em
         .insights__img
           width: 100%
         .insights__date

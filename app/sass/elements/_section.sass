@@ -240,6 +240,22 @@ section
       text-transform: capitalize
       font-size: 2.4em
 
+  &.about__team
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      background-color: rgba(189,159,1,.05)
+      width: 100%
+      height: 50%
+      bottom: -50%
+    .about__team-text
+      @include stack-questa
+      font-size: 1.5em
+      color: $dark-text-color
+      line-height: 1.4em
+      text-align: justify
+
 
 @media (max-width: 1200px)
   section
@@ -279,6 +295,12 @@ section
       p
         text-align: center
         padding: 0
+    &.about__team
+      .about__team-description
+        margin-top: 1em
+        .about__team-link
+          text-align: center
+
 
 @media (max-width: 768px)
   section
@@ -333,7 +355,23 @@ section
               text-align: center
               font-family: 'FontAwesome',sans-serif
 
+    &.about__team
+      .about__team-text
+        font-size: 1.4em
+        line-height: 1.3em
+
+@media (max-width: 425px)
+  section
+    &.about__team
+      .about__team-text
+        font-size: 1.3em
+        line-height: 1.3em
+        text-align: left
+
 @media (max-width: 375px)
   section
     .section__title
       font-size: 2em
+    &.page__description
+      .page__title
+        font-size: 2em
