@@ -200,30 +200,30 @@ section
             background-color: $main-text-color
     .properies__cards
       margin: 3em 0
-      .properies__card-item
-        background-color: #ffffff
-        text-align: center
-        box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.04)
-        margin-bottom: 2em
-        .properies__item-photo
-          .properies__item-img
-            width: 100%
-        .properies__item-text
-          padding: 1.4em
-          .properies__item-title
-            margin-bottom: 5px
-            @include gotham-medium
-            font-size: 1.3em
-            color: $dark-text-color
-          .properies__item-info
-            @include gotham-book
-            font-size: 1em
-            .item__title
-              color: $light-text-color
-              opacity: 0.6
-              padding-right: 5px
-            .item__address
-              color: $dark-text-color
+      //.properies__card-item
+      //  background-color: #ffffff
+      //  text-align: center
+      //  box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.04)
+      //  margin-bottom: 2em
+      //  .properies__item-photo
+      //    .properies__item-img
+      //      width: 100%
+      //  .properies__item-text
+      //    padding: 1.4em
+      //    .properies__item-title
+      //      margin-bottom: 5px
+      //      @include gotham-medium
+      //      font-size: 1.3em
+      //      color: $dark-text-color
+      //    .properies__item-info
+      //      @include gotham-book
+      //      font-size: 1em
+      //      .item__title
+      //        color: $light-text-color
+      //        opacity: 0.6
+      //        padding-right: 5px
+      //      .item__address
+      //        color: $dark-text-color
 
   &.page__description
     background-color: transparent
@@ -325,6 +325,48 @@ section
       @include stack-questa
       font-size: 3.2em
       color: $light-text-color
+    #property__slider-thumbnail
+      .owl-dots
+        display: none
+      &.owl-carousel
+        .owl-stage
+          .owl-item
+            .item
+              width: 100%
+    #property__slider-navigation, #property__slider-thumbnail
+      &.owl-carousel
+        .owl-stage
+          display: -webkit-flex
+          display: -ms-flexbox
+          display: flex
+          -webkit-flex-wrap: wrap
+          -ms-flex-wrap: wrap
+          flex-wrap: wrap
+          .owl-item
+            display: -webkit-flex
+            display: -ms-flexbox
+            display: flex
+            height: auto !important
+            img
+              height: 100%
+    #property__slider-navigation
+      .owl-nav
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translate(0, -50%)
+        width: 100%
+        button
+          width: 1em
+          height: 1em
+          color: $light-text-color
+          font-size: 4em
+          &.owl-next
+            float: right
+          span
+            display: block
+            outline: none
+
 
   &.property__callback
     background-color: #ffffff
@@ -417,6 +459,57 @@ section
         min-height: 200px
         .property__block-img
           object-fit: cover
+
+  &.single__post
+    .single__post-wrapper
+      .single__post-title
+        @include stack-questa
+        font-size: 2.6em
+        color: $dark-text-color
+      .single__post-date
+        display: block
+        color: $main-text-color
+        @include gotham-book
+        font-size: 1em
+        margin-bottom: 15px
+      .single__post-content
+        p
+          @include gotham-book
+          font-size: 1.1em
+          color: #979797
+      .content__double-img
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin: 20px 0
+        .double__item
+          flex: 1
+          &:not(:first-child)
+            padding-left: 20px
+      .content__quote
+        position: relative
+        @include stack-questa
+        font-size: 1.4em
+        line-height: 1.3em
+        padding: 35px 0 35px 45px
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          left: 0
+          width: 35px
+          height: 35px
+          background-image: url("../images/src/quotes.svg")
+          background-repeat: no-repeat
+          background-size: contain
+
+
+aside
+  .aside__title
+    @include stack-questa
+    color: #000
+    font-size: 1.8em
+    margin-bottom: 0.5em
 
 
 @media (max-width: 1200px)
@@ -569,6 +662,11 @@ section
           &:after
             content: ''
             display: none
+
+    &.property__images
+      #property__slider-navigation
+        .owl-nav
+          display: none
 
 @media (max-width: 425px)
   section
